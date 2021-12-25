@@ -1,0 +1,181 @@
+body {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* header 정의 */
+.header {
+  position: fixed;
+  width: 100%;
+  border-bottom: solid gray 1px;
+  max-width: 720px;
+  background-color: white;
+}
+
+.header .header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .header-wrapper .header-icon {
+  width: 3%;
+  height: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.header .header-wrapper .logo {
+  width: 20%;
+}
+
+/* main-container 정의 */
+.main-container {
+  padding-top: 7%;
+  padding-bottom: 12%;
+}
+
+#story-container {
+  display: flex;
+  justify-content: flex-start;
+  background-color: honeydew;
+  align-items: center;
+  overflow: hidden;
+}
+
+#story-container .story-wrapper {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 2% 0 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+#story-container img {
+  width: 12vw;
+  height: 12vh;
+  border: solid transparent 2px;
+  border-radius: 50%;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+#story-container p {
+  font-size: 12px;
+}
+
+.left-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+  width: 100%;
+}
+
+.right-wrapper {
+  display: flex;
+  justify-content: right;
+  margin-right: 3%;
+  align-items: center;
+}
+
+.post-header {
+  display: flex;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.post-header .left-wrapper img {
+  width: 5vw;
+  height: 5vh;
+  border: solid transparent 1px;
+  border-radius: 50%;
+  margin-right: 2%;
+}
+
+.left-wrapper p {
+  font-size: 12px;
+}
+
+.post-img img {
+  width: 100%;
+}
+
+.post-body-icons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-body-icons .left-wrapper img {
+  width: 6%;
+  height: 6%;
+  margin-top: 2%;
+  margin-right: 3%;
+}
+
+.post-footer .post-like-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2%;
+}
+
+.post-footer .post-like-wrapper img {
+  width: 4%;
+  height: 4%;
+  border-radius: 50%;
+  margin-left: 2%;
+  margin-right: 1.5%;
+}
+
+.post-footer .post-like-wrapper p {
+  font-size: 12px;
+}
+
+.post-footer .post-content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2%;
+  margin-top: 2%;
+  align-items: center;
+}
+
+.post-footer .post-content-wrapper .post-author {
+  font-weight: bold;
+  margin-right: 3%;
+}
+
+.post-footer .post-content-wrapper .post-content {
+  font-size: 12px;
+}
+
+.post-footer .post-time {
+  font-size: 5px;
+  margin-top: 5%;
+  margin-left: 3%;
+  color: gray;
+}
+
+/* footer 정의 */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 720px;
+  border-top: solid gray 1px;
+  background-color: white;
+}
+
+.footer .footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer .footer-wrapper img {
+  width: 4vw;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}

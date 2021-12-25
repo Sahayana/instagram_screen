@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex.css">
+    <title>Flex Example</title>
+</head>
+<body style="text-align: center;">
+    <div id="justify-content">
+        <h1>justify-content: center</h1>
+        <div id="justify-center">
+            <div id="footer">
+                <div id="icon-wrapper">
+                    <img class="footer-icon" src="img/home@3x.png">
+                    <img class="footer-icon" src="img/search@3x.png">
+                    <img class="footer-icon" src="img/trending@3x.png">
+                    <img class="footer-icon" src="img/like@3x.png">
+                    <img class="footer-icon" src="img/home@3x.png">
+                </div>
+            </div>
+        </div>
+        <h1>justify-content: space-around</h1>
+        <div id="justify-around">
+            <div id="footer">
+                <div id="icon-wrapper">
+                    <img class="footer-icon" src="img/home@3x.png">
+                    <img class="footer-icon" src="img/search@3x.png">
+                    <img class="footer-icon" src="img/trending@3x.png">
+                    <img class="footer-icon" src="img/like@3x.png">
+                    <img class="footer-icon" src="img/home@3x.png">
+                </div>
+            </div>
+        </div>
+        <h1>justify-content: space-between</h1>
+        <div id="justify-between">
+            <div id="footer">
+                <div id="icon-wrapper">
+                    <img class="footer-icon" src="img/home@3x.png">
+                    <img class="footer-icon" src="img/search@3x.png">
+                    <img class="footer-icon" src="img/trending@3x.png">
+                    <img class="footer-icon" src="img/like@3x.png">
+                    <img class="footer-icon" src="img/home@3x.png">
+                </div>
+            </div>
+        </div>
+        <h1>justify-content: flex-start</h1>
+        <div id="justify-start">
+            <div id="footer">
+                <div id="icon-wrapper">
+                    <img class="footer-icon" src="img/home@3x.png">
+                    <img class="footer-icon" src="img/search@3x.png">
+                    <img class="footer-icon" src="img/trending@3x.png">
+                    <img class="footer-icon" src="img/like@3x.png">
+                    <img class="footer-icon" src="img/home@3x.png">
+                </div>
+            </div>
+        </div>
+        <h1>justify-content: flex-end</h1>
+        <div id="justify-end">
+            <div id="footer">
+                <div id="icon-wrapper">
+                    <img class="footer-icon" src="img/home@3x.png">
+                    <img class="footer-icon" src="img/search@3x.png">
+                    <img class="footer-icon" src="img/trending@3x.png">
+                    <img class="footer-icon" src="img/like@3x.png">
+                    <img class="footer-icon" src="img/home@3x.png">
+                </div>
+            </div>
+        </div>
+        <button style="width: 100px; height: 50px;" onclick="next1()">다음</button>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <div id="align-items" style="display: none;">
+        <h1>align-items: center</h1>
+        <div id="align-center">
+            <div id="footer">
+                <div id="icon-wrapper">
+                    <img class="footer-icon" src="img/home@3x.png">
+                    <img class="footer-icon" src="img/search@3x.png">
+                    <img class="footer-icon" src="img/trending@3x.png">
+                    <img class="footer-icon" src="img/like@3x.png">
+                    <img class="footer-icon" src="img/home@3x.png">
+                </div>
+            </div>
+        </div>
+        <h1>align-items: start</h1>
+        <div id="align-start">
+            <div id="footer">
+                <div id="icon-wrapper">
+                    <img class="footer-icon" src="img/home@3x.png">
+                    <img class="footer-icon" src="img/search@3x.png">
+                    <img class="footer-icon" src="img/trending@3x.png">
+                    <img class="footer-icon" src="img/like@3x.png">
+                    <img class="footer-icon" src="img/home@3x.png">
+                </div>
+            </div>
+        </div>
+        <h1>align-items: end</h1>
+        <div id="align-end">
+            <div id="footer">
+                <div id="icon-wrapper">
+                    <img class="footer-icon" src="img/home@3x.png">
+                    <img class="footer-icon" src="img/search@3x.png">
+                    <img class="footer-icon" src="img/trending@3x.png">
+                    <img class="footer-icon" src="img/like@3x.png">
+                    <img class="footer-icon" src="img/home@3x.png">
+                </div>
+            </div>
+        </div>
+        <button style="width: 100px; height: 50px;" onclick="prev1()">이전</button>
+        <button style="width: 100px; height: 50px;" onclick="next2()">다음</button>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <div id="flex-column-justify" style="display: none;">
+        <h1>flex-direction: column & justify-content: center</h1>
+        <div id="column-justify-center">
+            <div id="footer">
+                <div id="icon-wrapper">
+                    <img class="footer-icon" src="img/home@3x.png">
+                    <img class="footer-icon" src="img/search@3x.png">
+                    <img class="footer-icon" src="img/trending@3x.png">
+                    <img class="footer-icon" src="img/like@3x.png">
+                    <img class="footer-icon" src="img/home@3x.png">
+                </div>
+            </div>
+        </div>
+        <h1>flex-direction: column & justify-content: flex-start</h1>
+        <div id="column-justify-start">
+            <div id="footer">
+                <div id="icon-wrapper">
+                    <img class="footer-icon" src="img/home@3x.png">
+                    <img class="footer-icon" src="img/search@3x.png">
+                    <img class="footer-icon" src="img/trending@3x.png">
+                    <img class="footer-icon" src="img/like@3x.png">
+                    <img class="footer-icon" src="img/home@3x.png">
+                </div>
+            </div>
+        </div>
+        <h1>flex-direction: column & justify-content: flex-end</h1>
+        <div id="column-justify-end">
+            <div id="footer">
+                <div id="icon-wrapper">
+                    <img class="footer-icon" src="img/home@3x.png">
+                    <img class="footer-icon" src="img/search@3x.png">
+                    <img class="footer-icon" src="img/trending@3x.png">
+                    <img class="footer-icon" src="img/like@3x.png">
+                    <img class="footer-icon" src="img/home@3x.png">
+                </div>
+            </div>
+        </div>
+        <button style="width: 100px; height: 50px;" onclick="prev2()">이전</button>
+        <button style="width: 100px; height: 50px;" onclick="next3()">다음</button>
+    </div>
+    <div id="flex-column-align" style="display: none;">
+        <h1>flex-direction: column & align-items: center</h1>
+        <div id="column-align-center">
+            <div id="footer">
+                <div id="icon-wrapper">
+                    <img class="footer-icon" src="img/home@3x.png">
+                    <img class="footer-icon" src="img/search@3x.png">
+                    <img class="footer-icon" src="img/trending@3x.png">
+                    <img class="footer-icon" src="img/like@3x.png">
+                    <img class="footer-icon" src="img/home@3x.png">
+                </div>
+            </div>
+        </div>
+        <h1>flex-direction: column & align-items: flex-start</h1>
+        <div id="column-align-start">
+            <div id="footer">
+                <div id="icon-wrapper">
+                    <img class="footer-icon" src="img/home@3x.png">
+                    <img class="footer-icon" src="img/search@3x.png">
+                    <img class="footer-icon" src="img/trending@3x.png">
+                    <img class="footer-icon" src="img/like@3x.png">
+                    <img class="footer-icon" src="img/home@3x.png">
+                </div>
+            </div>
+        </div>
+        <h1>flex-direction: column & align-items: flex-end</h1>
+        <div id="column-align-end">
+            <div id="footer">
+                <div id="icon-wrapper">
+                    <img class="footer-icon" src="img/home@3x.png">
+                    <img class="footer-icon" src="img/search@3x.png">
+                    <img class="footer-icon" src="img/trending@3x.png">
+                    <img class="footer-icon" src="img/like@3x.png">
+                    <img class="footer-icon" src="img/home@3x.png">
+                </div>
+            </div>
+        </div>
+        <button style="width: 100px; height: 50px;" onclick="prev3()">이전</button>
+    </div>
+</body>
+<script>
+    function next1() {
+        const jc = document.getElementById("justify-content")
+        jc.style.display = "none";
+        const ai = document.getElementById("align-items")
+        ai.style.display = "block";
+    }
+    function next2() {
+        const ai = document.getElementById("align-items")
+        ai.style.display = "none";
+        const fcj = document.getElementById("flex-column-justify")
+        fcj.style.display = "block";
+    }
+    function next3() {
+        const fcj = document.getElementById("flex-column-justify")
+        fcj.style.display = "none";
+        const fca = document.getElementById("flex-column-align")
+        fca.style.display = "block";
+    }
+    function prev1() {
+        const jc = document.getElementById("justify-content")
+        jc.style.display = "block";
+        const ai = document.getElementById("align-items")
+        ai.style.display = "none";
+    }
+    function prev2() {
+        const ai = document.getElementById("align-items")
+        ai.style.display = "block";
+        const fcj = document.getElementById("flex-column-justify")
+        fcj.style.display = "none";
+    }
+    function prev3() {
+        const fcj = document.getElementById("flex-column-justify")
+        fcj.style.display = "block";
+        const fca = document.getElementById("flex-column-align")
+        fca.style.display = "none";
+    }
+</script>
+</html>

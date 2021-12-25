@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+#hundred {
+  width: 100%;
+  height: 50px;
+  background-color: lightpink;
+}
+
+#fifty {
+  width: 50%;
+  height: 50px;
+  background-color: lightgoldenrodyellow;
+}
+
+#half {
+  width: 50%;
+}
+
+#vwhundred {
+  width: 100vw;
+  height: 50px;
+  background-color: lightpink;
+}
+
+#vwfifty {
+  width: 50vw;
+  height: 50px;
+  background-color: lightgoldenrodyellow;
+}
+
+#half-height {
+  height: 500px;
+}
+
+#vhhundred {
+  width: 100vw;
+  height: 50vh;
+  background-color: lightpink;
+}
+
+#vhfifty {
+  width: 50vw;
+  height: 50vh;
+  background-color: lightgoldenrodyellow;
+}

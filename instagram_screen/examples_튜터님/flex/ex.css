@@ -1,0 +1,103 @@
+#footer {
+  width: 100%;
+  border: 1px solid lightgray;
+  background-color: white;
+}
+/* flex 는 정렬하고자 하는 요소의 부모 요소에 먹여야 함! */
+#justify-center #icon-wrapper {
+  margin: 4% 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#justify-around #icon-wrapper {
+  margin: 4% 6%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#justify-between #icon-wrapper {
+  margin: 4% 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#justify-start #icon-wrapper {
+  margin: 4% 6%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#justify-end #icon-wrapper {
+  margin: 4% 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#align-center #icon-wrapper {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#align-start #icon-wrapper {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#align-end #icon-wrapper {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+#column-justify-center #icon-wrapper {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#column-justify-start #icon-wrapper {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#column-justify-end #icon-wrapper {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#column-align-center #icon-wrapper {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#column-align-start #icon-wrapper {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#column-align-end #icon-wrapper {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer-icon {
+  width: 3%;
+}
