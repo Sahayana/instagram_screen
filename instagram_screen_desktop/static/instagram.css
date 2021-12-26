@@ -1,0 +1,191 @@
+body {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* header 정의 */
+
+.header {
+  background-color: white;
+  position: fixed;
+  width: 100%; /* position이 fixed이면 width값이 필수로 주어져야 한다 */
+  max-width: 720px;
+  border-bottom: solid gray 1px;
+}
+
+.header #header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header-icon {
+  width: 3%;
+  margin: 3% 5%;
+}
+
+.header #logo {
+  width: 25%;
+}
+
+/* container 정의 */
+.container {
+  /* fixed 된 header와 footer 만큼의 padding값을 주어야 한다. 안하면 겹침*/
+  padding-top: 8%;
+  padding-bottom: 12%;
+}
+
+/* story container 정의 */
+.story-container {
+  display: flex;
+  padding-left: 2%;
+  background-color: gainsboro;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: solid gray 1px;
+  overflow: hidden; /* 컨테이너 안 요소가 많아져도 넘치지 않음 */
+}
+
+.story-container .story-wrapper {
+  width: auto;
+  margin: 2% 2.2%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story-wrapper img {
+  margin-top: 15%;
+  width: 13vw;
+  height: 13vh;
+  max-width: 80px;
+  max-height: 80px;
+  border: solid 2px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#f6f6f6, #f6f6f6),
+    linear-gradient(#c4c4c4, #c4c4c4);
+  background-clip: content-box;
+}
+
+.story-wrapper p {
+  font-size: 12px;
+  margin-top: 10%;
+}
+
+/* post 공통 정의 */
+.left-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%; /* width 값 100%를 넣어주어야 변하는데 why? */
+  margin-left: 2%;
+}
+
+.right-wrapper {
+  display: flex;
+  justify-content: right;
+  margin-right: 3%;
+}
+
+/* post-container 정의 */
+.post-container .post-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.post-header .left-wrapper img {
+  width: 5vw;
+  height: 5vh;
+  border: solid 1px transparent;
+  border-radius: 50%;
+}
+
+.post-header .left-wrapper p {
+  font-size: 15px;
+  margin-left: 3%;
+}
+
+.post-body img {
+  width: 100%;
+}
+
+.post-body-icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.post-body-icons .left-wrapper img {
+  width: 4vw;
+  margin-right: 2%;
+}
+
+.post-container .post-footer {
+  margin-top: 2%;
+}
+
+.post-footer .post-like-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.post-footer .post-like-wrapper img {
+  width: 5vw;
+  height: 5vh;
+  border: solid 1px transparent;
+  border-radius: 50%;
+  margin-right: 2%;
+}
+
+.post-footer .post-like-wrapper p {
+  font-size: 12px;
+}
+
+.post-footer .post-content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.post-footer .post-content-wrapper .post-author {
+  font-size: 14px;
+  margin-right: 3%;
+}
+
+.post-footer .post-content-wrapper .post-content {
+  font-size: 13px;
+  margin-right: 3%;
+}
+
+.post-time {
+  font-size: 10px;
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+/* footer 정의 */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 720px;
+  background-color: white;
+  border-top: solid gray 1px;
+}
+
+.footer #footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-icon {
+  margin: 3% 5%;
+  width: 3%;
+}

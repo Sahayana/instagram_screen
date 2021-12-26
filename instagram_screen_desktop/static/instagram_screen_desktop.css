@@ -1,0 +1,462 @@
+/* 반응형 미디어 쿼리 정의 */
+@media screen and (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  /* header 정의 */
+  .header {
+    position: fixed;
+    width: 100%;
+    border-bottom: solid gray 1px;
+    max-width: 720px;
+    background-color: white;
+  }
+
+  .header .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header .header-wrapper .header-icon {
+    width: 3%;
+    height: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .header .header-wrapper .logo {
+    width: 20%;
+  }
+
+  /* main-container 정의 */
+  .main-container {
+    padding-top: 7%;
+    padding-bottom: 12%;
+  }
+
+  #story-container {
+    display: flex;
+    justify-content: flex-start;
+    background-color: honeydew;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  #story-container .story-wrapper {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 2% 2% 0 2%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #story-container img {
+    width: 12vw;
+    height: 12vh;
+    border: solid transparent 2px;
+    border-radius: 50%;
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  #story-container p {
+    font-size: 12px;
+  }
+
+  .left-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    width: 100%;
+  }
+
+  .right-wrapper {
+    display: flex;
+    justify-content: right;
+    margin-right: 3%;
+    align-items: center;
+  }
+
+  .post-header {
+    display: flex;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+
+  .post-header .left-wrapper img {
+    width: 5vw;
+    height: 5vh;
+    border: solid transparent 1px;
+    border-radius: 50%;
+    margin-right: 2%;
+  }
+
+  .left-wrapper p {
+    font-size: 12px;
+  }
+
+  .post-img img {
+    width: 100%;
+  }
+
+  .post-body-icons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .post-body-icons .left-wrapper img {
+    width: 6%;
+    height: 6%;
+    margin-top: 2%;
+    margin-right: 3%;
+  }
+
+  .post-footer .post-like-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2%;
+  }
+
+  .post-footer .post-like-wrapper img {
+    width: 4%;
+    height: 4%;
+    border-radius: 50%;
+    margin-left: 2%;
+    margin-right: 1.5%;
+  }
+
+  .post-footer .post-like-wrapper p {
+    font-size: 12px;
+  }
+
+  .post-footer .post-content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2%;
+    margin-top: 2%;
+    align-items: center;
+  }
+
+  .post-footer .post-content-wrapper .post-author {
+    font-weight: bold;
+    margin-right: 3%;
+  }
+
+  .post-footer .post-content-wrapper .post-content {
+    font-size: 12px;
+  }
+
+  .post-footer .post-time {
+    font-size: 5px;
+    margin-top: 5%;
+    margin-left: 3%;
+    color: gray;
+  }
+
+  /* footer 정의 */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 720px;
+    border-top: solid gray 1px;
+    background-color: white;
+  }
+
+  .footer .footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer .footer-wrapper img {
+    width: 4vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    min-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  /* header 정의 */
+  .header {
+    height: 50px;
+    background-color: white;
+    border-bottom: solid grey 1px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header .header-container {
+    width: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header .header-container #main-logo {
+    width: 70px;
+  }
+
+  .header .header-container #search-bar {
+    width: 60px;
+    height: 30px;
+  }
+
+  .header .header-container .header-icons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .header .header-container .header-icons-wrapper img {
+    width: 15px;
+    margin-right: 10%;
+  }
+
+  /* body-container 정의 */
+  .body-container {
+    padding-top: 8%;
+    justify-content: right;
+    display: flex;
+    width: 720px;
+  }
+
+  /* body-container 정의 */
+  .body-container .post-container {
+    width: 460px;
+    margin-right: 2%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* story-container 정의 */
+  .story-container {
+    display: flex;
+    justify-content: flex-start;
+    background-color: honeydew;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid grey;
+  }
+
+  .story-container .story-wrapper {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 2% 2% 0 2%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .story-container img {
+    width: 50px;
+    height: 50px;
+    border: solid transparent 2px;
+    border-radius: 50%;
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .story-container p {
+    font-size: 10px;
+  }
+
+  /* post 정의 */
+  .post {
+    margin-top: 10%;
+    border: solid 1px grey;
+  }
+
+  .left-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    width: 100%;
+  }
+
+  .right-wrapper {
+    display: flex;
+    justify-content: right;
+    margin-right: 3%;
+    align-items: center;
+  }
+
+  .post-header {
+    display: flex;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+
+  .left-wrapper img {
+    width: 30px;
+    height: 30px;
+    border: solid transparent 1px;
+    border-radius: 50%;
+    margin-right: 2%;
+  }
+
+  .left-wrapper p {
+    font-size: 12px;
+  }
+
+  .post-body img {
+    width: 100%;
+  }
+
+  .post-body-icons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .post-body-icons .left-wrapper img {
+    width: 6%;
+    height: 6%;
+    margin-top: 2%;
+    margin-right: 3%;
+  }
+
+  .post-body .post-body-icons .right-wrapper img {
+    width: 20px;
+  }
+
+  .post-footer .post-like-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2%;
+  }
+
+  .post-footer .post-like-wrapper img {
+    width: 4%;
+    height: 4%;
+    border-radius: 50%;
+    margin-left: 2%;
+    margin-right: 1.5%;
+  }
+
+  .post-footer .post-like-wrapper p {
+    font-size: 12px;
+  }
+
+  .post-footer .post-content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2%;
+    margin-top: 2%;
+    align-items: center;
+  }
+
+  .post-footer .post-content-wrapper .post-author {
+    font-weight: bold;
+    margin-right: 3%;
+    font-size: 12px;
+  }
+
+  .post-footer .post-content-wrapper .post-content {
+    font-size: 10px;
+  }
+
+  .post-footer .post-time {
+    font-size: 5px;
+    margin-top: 5%;
+    margin-left: 3%;
+    color: gray;
+  }
+
+  .body-container .follow-container {
+    width: 260px;
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border: solid transparent 1px;
+  }
+
+  .body-container .follow-container .follow-header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .body-container .follow-container .follow-header p {
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .body-container .follow-container .follow-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .body-container .follow-container .follow-list .follow-wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .body-container .follow-container .follow-list .follow-wrapper .user-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+  }
+
+  .body-container
+    .follow-container
+    .follow-list
+    .follow-wrapper
+    .user-list
+    img {
+    width: 30px;
+    height: 30px;
+    border: solid transparent 1px;
+    border-radius: 50%;
+    margin-right: 3%;
+  }
+
+  .body-container .follow-container .follow-list .follow-wrapper .user-list p {
+    font-size: 10px;
+    margin-left: 5%;
+  }
+
+  .body-container .follow-container .follow-list .follow-wrapper .follow-btn {
+    margin-right: 2%;
+    display: flex;
+    justify-content: right;
+    color: blue;
+    font-size: 10px;
+    width: 150px;
+  }
+}
